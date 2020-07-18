@@ -8,8 +8,8 @@ const { flags } = require('@oclif/command')
 const DaemonCommand = require('../../lib/cli')
 const { HyperdriveClient } = require('../..')
 
-const IMPORT_KEY_FILE_PATH = '.hyperdrive-import-key'
-const EXPORT_KEY_FILE_PATH = '.hyperdrive-export-key'
+const IMPORT_KEY_FILE_PATH = '.dwebfs-import-key'
+const EXPORT_KEY_FILE_PATH = '.dwebfs-export-key'
 
 class ImportCommand extends DaemonCommand {
   static usage = 'import [dir] [key]'

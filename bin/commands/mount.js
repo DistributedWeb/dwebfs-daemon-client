@@ -53,7 +53,7 @@ class MountCommand extends DaemonCommand {
       console.log(`  Seeding: ${seeding}`)
       if (!seeding) {
         console.log()
-        console.log(`This drive is private by default. To publish it, run \`hyperdrive seed ${path}\``)
+        console.log(`This drive is private by default. To publish it, run \`dwebfs seed ${path}\``)
       }
     } catch (err) {
       spinner.fail('Could not mount the drive:')
