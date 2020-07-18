@@ -4,7 +4,7 @@
   "description": "A client library and CLI tool for interacting with the dwebfs daemon.",
   "main": "index.js",
   "bin": {
-    "hyperdrive": "./bin/run/run"
+    "dwebfs": "./bin/run/run"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +18,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/andrewosh/hyperdrive-daemon-client.git"
+    "url": "git+https://github.com/andrewosh/dwebfs-daemon-client.git"
   },
   "keywords": [
     "dwebfs",
@@ -28,9 +28,9 @@
   "author": "Andrew Osheroff <andrewosh@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andrewosh/hyperdrive-daemon-client/issues"
+    "url": "https://github.com/andrewosh/dwebfs-daemon-client/issues"
   },
-  "homepage": "https://github.com/andrewosh/hyperdrive-daemon-client#readme",
+  "homepage": "https://github.com/andrewosh/dwebfs-daemon-client#readme",
   "dependencies": {
     "@grpc/grpc-js": "^0.5.1",
     "@oclif/command": "^1.5.19",
@@ -60,7 +60,7 @@
   },
   "oclif": {
     "commands": "./bin/commands",
-    "bin": "hyperdrive",
+    "bin": "dwebfs",
     "plugins": [
       "@oclif/plugin-help",
       "@oclif/plugin-autocomplete"

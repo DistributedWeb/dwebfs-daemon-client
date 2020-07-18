@@ -41,7 +41,7 @@ class CreateCommand extends DaemonCommand {
       console.log(`  Seeding: ${seeding}`)
       if (!seeding) {
         console.log()
-        console.log(`This drive not being announced by default. To announce it on the DHT, run \`hyperdrive seed ${args.path}\``)
+        console.log(`This drive not being announced by default. To announce it on the DHT, run \`dwebfs seed ${args.path}\``)
       }
     } catch (err) {
       spinner.fail('Could not create the drive:')

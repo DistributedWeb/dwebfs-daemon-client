@@ -12,7 +12,7 @@ const { flags } = require('@oclif/command')
 const DaemonCommand = require('../../lib/cli')
 const { HyperdriveClient } = require('../..')
 
-const KEY_FILE_PATH = '.hyperdrive-export-key'
+const KEY_FILE_PATH = '.dwebfs-export-key'
 
 class DriveWatcher extends EventEmitter {
   constructor (client, drive, opts = {}) {
