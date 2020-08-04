@@ -1,13 +1,13 @@
 # dwebfs-daemon-client
 A Node client library and CLI tool for interacting with the Hyperdrive daemon.
 
-Implements the RPC methods defined in the [`dwebfs-schemas`](https://github.com/andrewosh/dwebfs-schemas) repo.
+Implements the RPC methods defined in the [`dwebfs-schemas`](https://github.com/distributedweb/dwebfs-schemas) repo.
 
 ## Installation
 `npm i dwebfs-daemon-client --save`
 
 ## Usage
-This module provides both programmatic and CLI access to the [Hyperdrive daemon](https://github.com/andrewosh/dwebfs-daemon). For info about how to use the CLI, take a look at README in the daemon repo.
+This module provides both programmatic and CLI access to the [Hyperdrive daemon](https://github.com/distributedweb/dwebfs-daemon). For info about how to use the CLI, take a look at README in the daemon repo.
 
 Each client takes an optional gRPC endpoint and access token as constructor arguments:
 ```js
@@ -22,7 +22,7 @@ All Hyperdrive API methods are accessed through `client.drive`, and all FUSE met
 ## API
 The client exposes a gRPC interface for a) creating and interacting with remote Hyperdrives and b) mounting Hyperdrives as local directories using FUSE.
 
-Check out the [daemon tests](https://github.com/andrewosh/dwebfs-daemon/blob/dwebfs-api/test/dwebfs.js) for more example usage.
+Check out the [daemon tests](https://github.com/distributedweb/dwebfs-daemon/blob/dwebfs-api/test/dwebfs.js) for more example usage.
 
 ### Hyperdrive
 The client's Hyperdrive API is designed to mirror the methods in Hyperdrive as closely as possible.
@@ -142,7 +142,7 @@ This message will be delivered with best-effort, but if the remote peer is not s
 ##### `topicHandle.on('close', ...)`
 Emitted when the topic stream has closed.
 
-You can check out the internals in the [peersockets repo](https://github.com/andrewosh/peersockets).
+You can check out the internals in the [peersockets repo](https://github.com/distributedweb/peersockets).
 
 ### Peers
 `client.peers` allows you to get information about currently-connected peers.
